@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-size: 2.5rem;
+      color: #ff90c2;
+      text-align: center;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      gap: 20px;
+    }
+
+    .photo-card {
+      background: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+      text-align: center;
+    }
+
+    .photo-card img {
+      width: 250px;
+      height: auto;
+      display: block;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 8px 16px;
+      background: #ff4e91;
+      color: white;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background: #ff1f75;
+    }
+    body {
+  margin: 0;
+  padding: 0;
+  background: url('/assets/khushboo-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+  </style>
+</head>
+<body>
+  <h1>A Collection I Hold Close to My Heart 📸</h1>
+  <div class="gallery-container">
+    <div class="photo-card">
+      <img src="/assets/photo1.jpg" alt="Memory 1">
+      <a href="/assets/photo1.jpg" download class="download-btn">Download</a>
+    </div>
+    <div class="photo-card">
+      <img src="/assets/photo2.jpg" alt="Memory 2">
+      <a href="/assets/photo2.jpg" download class="download-btn">Download</a>
+    </div>
+    <div class="photo-card">
+      <img src="/assets/photo3.jpg" alt="Memory 3">
+      <a href="/assets/photo3.jpg" download class="download-btn">Download</a>
+    </div>
+    <!-- More photo-cards can be added here -->
+  </div>
+</body>
+</html>

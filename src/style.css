@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffe6f0, #e0f7fa);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.gift, .cake {
+  font-size: 25rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.gift:hover, .cake:hover {
+  transform: scale(1.2);
+}
+
+.celebration {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.emojis {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.celebration {
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* for contrast */
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.celebration h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.celebration .message-box p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0.8rem 0;
+}
+
+.celebration footer {
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.video-loader {
+  color: white;
+  text-shadow: 1px 1px 4px black;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.celebration {
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* soft glow */
+  font-family: 'Segoe UI', 'Poppins', sans-serif;
+  padding: 2rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.celebration h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.85);
+}
+
+.celebration .message-box {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.3); /* transparent black box */
+  padding: 1.5rem;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.celebration .message-box p {
+  margin-bottom: 1.2rem;
+  color: #ffffff;
+}
+
+.celebration footer {
+  margin-top: 1.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #ffb6c1;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+.btn-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.wish-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(45deg, #ff4e91, #ff8a5c);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.wish-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.5);
+}
